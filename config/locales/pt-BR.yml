@@ -1,5 +1,5 @@
 pt-BR:
-  confirmations:
+  confirmations: 
     success: 'Email confirmado com sucesso, obrigado!'
   rooms:
     index:
