@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :users
 
     resource :confirmation, only: [:show]
+    resource :user_sessions, only: [:new, :create, :destroy]
   end
   
   get '/:locale' => 'home#index', locale: LOCALES

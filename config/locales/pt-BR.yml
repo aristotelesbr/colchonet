@@ -37,7 +37,7 @@ pt-BR:
   user_sessions:
     new:
      new: 'Login'
-     sig_nup: 'Cadastre-se'
+     sign_up: 'Cadastre-se'
      title: 'Login'
      invalid_login: 
      #password: 'Senha'
