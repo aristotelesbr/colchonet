@@ -4,7 +4,7 @@ class UserSession
 	attr_accessor :email, :password
 	validates_presence_of :email, :password
 
-	def initialize(sessions, attributes={})
+	def initialize(session, attributes={})
 		@session = session
 		@email = attributes[:email]
 		@password = attributes[:password]
