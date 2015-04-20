@@ -1,0 +1,13 @@
+<nav>
+	<ul>
+		<li><%= link_to t('layout.new_room'), new_room_path %> </li>
+		<li><%= link_to t('layout.rooms'), rooms_path %> </li>
+		<li>
+			<%= link_to t('layout.my_profile'),
+			user_path(current_user) %>
+		</li>
+		<li>
+			<a href="/pt-BR/user_sessions" data-method="delete"rel="nofollow">Logout</a>
+		</li>
+	</ul>
+</nav>

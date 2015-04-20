@@ -11,17 +11,18 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
+	
 	<header>
 		<div id="header-wrap">
 			<h1><%= link_to "colcho.net", root_path %> </h1>
-			<nav>
-				<ul>
-					<li><%= link_to t("layout.rooms"), rooms_path %> </li>
-					<li><%= link_to t("layout.signup"), new_user_path %> </li>
-				</ul>
-			</nav>
+			<% if user_signed_in? %>
+				<%= render 'layouts/user_navbar' %>
+			<% else %>
+				<%= render 'layouts/visitor_navbar' %>
+			<% end %>
 		</div>
 	</header>
+
 	<div id="content">
 		<% if notice.present? %>
 		 <p id="notice"><%= notice %> </p>
