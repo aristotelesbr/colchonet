@@ -7,7 +7,7 @@
 			user_path(current_user) %>
 		</li>
 		<li>
-			<a href="/pt-BR/user_sessions" data-method="delete"rel="nofollow">Logout</a>
+			<%= link_to t('layout.signout'), user_sessions_path, method: :delete %>
 		</li>
 	</ul>
 </nav>
