@@ -12,6 +12,15 @@ pt-BR:
       location: Localização
       description: Descrição
       delete: Deseja excluir este item?
+  dialogs:
+    destroy: 'Você tem certeza que quer remover?'
+  rooms:
+    index:
+      title: 'Quartos disponíveis'
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: 'Editar'
+      destroy: 'Remover'
     show:
       #notice: Operação realizada com sucesso!
       title: "Quarto: %{title}"
