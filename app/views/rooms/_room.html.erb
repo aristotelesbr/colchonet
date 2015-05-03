@@ -1,12 +1,14 @@
 <article class="room">
 	<h2><%= link_to room.title, room %> </h2>
 	<span class="created">
-		<%= t '.owner_html', owner: room.user.full_name,
+		<%= t '.owner_html',
+		owner: room.user.full_name,
 		when: l(room.created_at, format: :short) %>
 	</span>
 	<p>
 		<span class="location">
-			<%= link_to room.location, "https://maps.google.com/?q=#{room.location}",
+			<%= link_to room.location,
+			"https://maps.google.com/?q=#{room.location}",
 			target: :blank %>
 		</span>
 	</p>

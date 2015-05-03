@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   #LOCALES = /en|pt\-BR/
   #scope "(:locale)", locale: LOCALES do
 
-    resources :rooms
+
+    resources :rooms do
+      resources :reviews, only: [:create, :update]
+    end
     resources :users
 
     resource :confirmation, only: [:show]
