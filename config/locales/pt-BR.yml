@@ -21,6 +21,8 @@ pt-BR:
       owner_html: '&mdash; %{owner} (%{when})'
       edit: 'Editar'
       destroy: 'Remover'
+    review:
+      login_to_review: Faça o login para avaliar quartos
     show:
       #notice: Operação realizada com sucesso!
       title: "Quarto: %{title}"
@@ -57,6 +59,8 @@ pt-BR:
       signed_in: 'Login efetuado com sucesso!'
       signed_out: 'Logout efetuado com sucesso. Até logo!'
       already_logged_in: "Você já está logado."
+      room_created: "Quarto cadastrado com sucesso"
+      room_updated: "Qarto atualizado com sucesso!"
 
   signup:                                       #<= Pasta
     confirm_email:                              #<= Arquivo.html.erb
@@ -93,6 +97,7 @@ pt-BR:
     models:
       room: Quarto
       user: Usuário
+      review: Avaliação
     attributes:
       user:
         bio: Biografia
